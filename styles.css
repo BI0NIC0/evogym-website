@@ -6,7 +6,7 @@ body {
     background-color: #292C32;
     color: #F3F3F2;
     margin: 0;
-    padding: 0 40px; /* Applicato padding globale per distanziare tutti gli elementi dai bordi */
+    padding: 0;
 }
 
 header {
@@ -48,13 +48,10 @@ nav ul li a:hover {
     color: #1F1F1E;
 }
 
-/* Miglioramento del layout generale */
-section {
-    padding: 40px 0; /* Aggiunto padding per uniformare la spaziatura */
-    text-align: center;
-}
-
+/* Miglioramento del layout della home */
 .hero {
+    text-align: center;
+    padding: 50px;
     background: #22242A;
 }
 
@@ -90,9 +87,18 @@ section {
     text-align: center;
 }
 
-.feature-item img {
+.feature-item img, .image-placeholder {
     width: 100px;
-    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px dashed white;
     margin: auto;
 }
 

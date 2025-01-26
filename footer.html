@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Effetto di rivelazione degli elementi
+    ScrollReveal().reveal('.reveal', {
+        distance: '50px',
+        duration: 800,
+        easing: 'ease-in-out',
+        origin: 'bottom',
+        interval: 200
+    });
+    
     // Aggiornamento dinamico dell'anno nel footer
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
@@ -9,21 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('header.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('header-container').innerHTML = data;
+            document.body.insertAdjacentHTML('afterbegin', data);
         });
     
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
+            document.body.insertAdjacentHTML('beforeend', data);
         });
-    
-    // Effetto di rivelazione degli elementi
-    ScrollReveal().reveal('.reveal', {
-        distance: '50px',
-        duration: 800,
-        easing: 'ease-in-out',
-        origin: 'bottom',
-        interval: 200
-    });
 });

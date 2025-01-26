@@ -7,47 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="script.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-        body {
-            font-family: 'Lato', sans-serif;
-        }
-        .image-placeholder {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #444;
-            color: white;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            border: 2px dashed white;
-        }
-        .hero-image-placeholder {
-            width: 100%;
-            max-width: 600px;
-            height: 300px;
-        }
-        .feature-image-placeholder {
-            width: 100px;
-            height: 100px;
-            margin: auto;
-        }
-    </style>
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1 class="reveal">Evogym - Il tuo Personal Trainer Intelligente</h1>
-        <nav>
-            <ul style="display: flex; justify-content: center; gap: 20px; padding: 0;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pricing.html">Prezzi</a></li>
-                <li><a href="about.html">Chi Siamo</a></li>
-                <li><a href="contact.html">Contatti</a></li>
-                <li><a href="terms.html">Termini</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-container"></div>
     <main>
         <section class="hero reveal">
             <h2 style="font-size: 2rem; margin-bottom: 15px; text-align: left;">La tua palestra, su misura per te</h2>
@@ -55,7 +17,8 @@
             <div style="margin: 20px 0;"><div class="image-placeholder hero-image-placeholder" style="width: 100%; max-width: 800px; height: 400px; margin: 20px auto; display: flex; align-items: center; justify-content: center;">600x300</div></div>
             <a href="pricing.html" class="cta-button">Inizia Gratis</a>
         </section>
-            <section class="why-evogym reveal">
+        
+        <section class="why-evogym reveal">
             <h2 style="font-size: 2rem; margin-bottom: 15px; text-align: left;">Perché scegliere Evogym?</h2>
             <ul class="standard-list" style="display: flex; flex-direction: column; align-items: flex-start; gap: 15px; padding-left: 40px; list-style-position: outside;">
                 <li>📊 Piani basati su <strong>dati e progressi personali</strong></li>
@@ -75,8 +38,6 @@
             </div>
         </section>
     </main>
-    <footer style="padding: 40px; text-align: center; border-top: 1px solid #ccc;">
-        <p>&copy; 2025 Evogym - Tutti i diritti riservati | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    <div id="footer-container"></div>
 </body>
 </html>
