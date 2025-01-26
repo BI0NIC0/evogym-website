@@ -10,6 +10,44 @@ header {
     padding: 20px;
     text-align: center;
 }
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.feature-item {
+    background: #22242A;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.feature-item img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.plan {
+    background: #22242A;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 footer {
     background-color: #1A1A1A;
     padding: 10px;
