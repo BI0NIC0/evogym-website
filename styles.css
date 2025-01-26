@@ -1,53 +1,128 @@
+/* Importazione del font migliore per la leggibilità */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #292C32;
     color: #F3F3F2;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #1F1F1E;
     padding: 20px;
     text-align: center;
 }
+
+/* Miglioramento del menu di navigazione */
+nav {
+    background-color: #1F1F1E;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F3F3F2;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FFBC8F;
+    color: #1F1F1E;
+}
+
+/* Miglioramento del layout della home */
 .hero {
     text-align: center;
     padding: 50px;
+    background: #22242A;
 }
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: auto;
+}
+
 .hero-image {
     width: 100%;
     max-width: 600px;
     display: block;
     margin: auto;
 }
+
 .feature-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .feature-item {
     background: #22242A;
     padding: 15px;
     border-radius: 5px;
     text-align: center;
 }
+
 .feature-item img {
     width: 100px;
     display: block;
     margin: auto;
 }
+
 .pricing-table {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .plan {
     background: #22242A;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
+
+/* Pulsante CTA migliorato */
+.cta-button {
+    display: inline-block;
+    background: #FFBC8F;
+    color: #1F1F1E;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d4d4d1;
+}
+
 footer {
     background-color: #1A1A1A;
     padding: 10px;
