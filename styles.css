@@ -6,7 +6,7 @@ body {
     background-color: #292C32;
     color: #F3F3F2;
     margin: 0;
-    padding: 0;
+    padding: 0 40px; /* Applicato padding globale per distanziare tutti gli elementi dai bordi */
 }
 
 header {
@@ -48,10 +48,13 @@ nav ul li a:hover {
     color: #1F1F1E;
 }
 
-/* Miglioramento del layout della home */
-.hero {
+/* Miglioramento del layout generale */
+section {
+    padding: 40px 0; /* Aggiunto padding per uniformare la spaziatura */
     text-align: center;
-    padding: 50px;
+}
+
+.hero {
     background: #22242A;
 }
 
